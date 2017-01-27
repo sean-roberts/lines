@@ -70,8 +70,8 @@ which returns:
 ```
 *Note* there is a difference between responses with `?_regexp` and without it. So don't say I didn't warn you ;)
 
-
-
+## Built On
+[`micro`](https://github.com/zeit/micro) with some [`fetch`](https://github.com/andris9/fetch) and [`url`](https://github.com/defunctzombie/node-url) help
 
 ## License
 
