@@ -1,0 +1,17 @@
+{
+  "name": "@seanroberts/lines",
+  "repository": "https://github.com/sean-roberts/lines.git",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro -p 3333"
+  },
+  "author": "Sean Roberts",
+  "license": "MIT",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "micro": "^6.2.1",
+    "url": "^0.11.0"
+  }
+}
