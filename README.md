@@ -75,4 +75,4 @@ which returns:
 
 ## License
 
-Copyright ©️ 2017 Sean Roberts, licensed under the MIT License. See [`LICENSE.md`](./LICENSE.md) for more information.
+Copyright ©️ 2017 Sean Roberts, licensed under the MIT License. See [`LICENSE`](./LICENSE) for more information.
