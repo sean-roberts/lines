@@ -1,7 +1,7 @@
 {
   "name": "@seanroberts/lines",
   "repository": "https://github.com/sean-roberts/lines.git",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
