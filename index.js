@@ -24,15 +24,34 @@ module.exports = async function (req, res) {
 
         const HTMLBody = body.toString();
         let lines = HTMLBody.split(/\n/g);
+        let retVal;
 
         if(query._regexp){
             const rxParts = query._regexp.match(new RegExp('^/(.*?)/([gimy]*)$'));
             const rx = new RegExp(rxParts[1], rxParts[2]);
-            lines = lines.filter((line)=>{
-                return rx.test(line);
-            });
+
+            retVal = {
+                matches: lines.reduce(( matches, line, currentIndex)=>{
+
+                    if(rx.test(line)){
+                        matches.push({
+                            line: line,
+                            index: currentIndex
+                        });
+                    }
+                    return matches;
+                }, [])
+            };
+
+            retVal.count = retVal.matches.length;
+
+        }else {
+            retVal = {
+                lines: lines,
+                count: lines.length
+            };
         }
 
-        send(res, 200, lines);
+        send(res, 200, retVal);
     });
 }
